@@ -1,0 +1,242 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+}
+
+.sidebar {
+  padding: 40px;
+  width: 20%;
+  background-color: wheat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.sidebar ul li:hover {
+  transform: translateY(-10px);
+}
+
+.sidebar ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.show-room-area {
+  width: 80%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.show-room-area h1 {
+  font-size: 30px;
+  display: block;
+
+  margin-bottom: 20px;
+}
+
+.show-room-area .photos {
+  width: 100%;
+}
+
+.show-room-area p {
+  font-size: 20px;
+  margin: 10px 0;
+  align-self: flex-end;
+}
+
+.show-room-area .subimt {
+  align-self: flex-end;
+  padding: 10px;
+  border: 1px #000 solid;
+  width: 80px;
+  text-align: center;
+  border-radius: 1000px;
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+.show-room-area .subimt:hover {
+  cursor: pointer;
+  color: purple;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+}
+
+.photos .show-photo {
+  /* height: 400px; */
+  margin-bottom: 10px;
+  text-align: center;
+  /* line-height: 400px; */
+}
+
+.photos .show-photo img {
+  max-height: 100%;
+}
+
+.photos .img-list ul {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.photos .img-list ul li {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.photos .img-list ul li img:hover {
+  cursor: pointer;
+}
+
+/* descript container*/
+
+.description {
+  padding: 20px;
+
+}
+
+.description .room_equipments ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description .room_equipments ul li {
+  padding: 10px 0;
+  width: 33.33333%;
+}
+
+/* Calender*/
+.room-booked-status .calender {
+  width: 350px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.calender-title th {
+  width: 50px;
+  padding: 10px;
+}
+
+.calender-days tr td {
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.room-booked-status .change-month {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.room-booked-status .change-month div:not(.show-month) {
+  padding: 10px 20px;
+  border: 1px #000 solid;
+  margin-bottom: 5px;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+
+.room-booked-status .change-month div:not(.show-month):hover {
+  cursor: pointer;
+  box-shadow: 1px 2px #888888;
+  background-color: #aac;
+  color: white;
+}
+
+.room-booked-status .change-month .show-month {
+  padding: 10px 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+tbody tr td:first-child:not(:empty),
+tbody tr td:last-child:not(:empty) {
+  background-color: #f88;
+}
+
+.table_descript div {
+  width: 20px;
+  height: 10px;
+  margin-bottom: 5px;
+
+  background-color: #f00;
+
+}
+
+.status {
+  font-size: 16px;
+  color: #777
+}
+
+.sold_out {
+  background-color: #f00;
+}
+
+/* top button*/
+.top_btn {
+  width: 40px;
+  height: 40px;
+  background-color: #aaa;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  line-height: 40px;
+  opacity: 0;
+  transition: .3ss;
+}
+
+.top_btn:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  background-color: wheat;
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .container .sidebar, show-room-area {
+    width: 100%;
+  }
+  .photos {
+    display: flex;
+    flex-direction: column;
+  }
+}

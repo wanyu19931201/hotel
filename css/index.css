@@ -1,0 +1,60 @@
+.container {
+	width: 100%;
+	margin: 0 auto;
+	/* padding: 10px; */
+	background-color: #aaa;
+}
+
+.banner {
+	padding-top: 10px;
+}
+
+.banner img {
+	display: block;
+	margin: 0 auto;
+	/* padding: 10px; */
+}
+
+
+.info div:nth-child(odd) {
+	background-color: sandybrown;
+}
+
+.info>div {
+	margin: 0 auto;
+}
+
+.info h1 {
+	text-align: center;
+	font-size: 60px;
+	margin: 20px 0;
+	letter-spacing: 1.5rem;
+	padding-top: 100px;
+}
+
+.info p {
+	line-height: 1.3rem;
+	margin-bottom: 30px;
+	padding: 0 20%;
+}
+
+.info p:last-child {
+	padding-bottom: 100px;
+}
+
+.info table {
+	margin: 20px auto 0 auto;
+
+}
+
+.info tr td:first-child {
+	font-weight: 900;
+	margin-right: 30px;
+	width: 100px;
+
+}
+
+.info tr {
+	height: 50px;
+	vertical-align: middle;
+}

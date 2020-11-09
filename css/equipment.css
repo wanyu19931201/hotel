@@ -1,0 +1,35 @@
+.container{
+    width: 100%;
+	max-width: 1200px;
+    margin:0 auto;
+    background-image: linear-gradient(0deg,#D8DFE6,#8E99A9);
+    padding: 10px;
+}
+.container li{
+    display: flex;
+    margin-bottom: 10px;
+}
+.container li img{
+    /* height: 300px; */
+    width: 30%;
+
+}
+.container li .info{
+    /* height: 300px; */
+    width: 70%;
+    align-self: center;
+    padding: 10px;
+}
+.container li .info h1{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.container li .info h3{
+    margin-top: 30px;
+}
+
+
+.container li:nth-child(even) img {
+    order: 1;
+}
